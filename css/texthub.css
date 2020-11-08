@@ -1,0 +1,115 @@
+﻿#texthub {
+    position: relative;
+    font-family: "Monoton", cursive;
+    font-size: 5vw;
+    text-align: center;
+    color: #eb0ef7;
+    text-shadow: 0px 0px 100px #eb0ef7;
+    width: auto;
+    z-index: 2;
+}
+
+
+.blink {
+    animation: blink 2s ease-in-out 0s infinite;
+}
+
+.blink1 {
+    animation: blink 2s ease-in-out 2.3s infinite;
+}
+
+.blink3 {
+    animation: blink 2s ease-in-out 5.8s infinite;
+}
+
+.down {
+    animation: down 1s ease-in-out both 1s 1;
+}
+
+.spin {
+    position: absolute;
+    animation: spin 5s ease-in-out both 1s 1;
+}
+
+.off {
+    opacity: 0.8;
+    animation: off 3s ease-in-out forwards 2s 1;
+}
+
+.r {
+    margin-left: 5vw;
+}
+
+.Y {
+    color: green;
+}
+
+@keyframes blink {
+    19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+        opacity: 0.3;
+    }
+
+    0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes off {
+    0%, 15.999%, 61%, 85.999%, 95% {
+        color: #eb0ef7;
+    }
+
+    16%, 19%, 60.999%, 86%, 93%, 100% {
+        color: #640d87;
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: translate(0px, 150px);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes a1 {
+    0% {
+        border: 5px solid #57104F;
+        box-shadow: 0px 0px 17px 1px #0a0c3d;
+    }
+
+    50% {
+        border: 5px solid #57104F;
+        box-shadow: 0px 0px 17px 1px #0a0c3d;
+    }
+
+    50.001% {
+        border: 5px solid #eb0ef7;
+        box-shadow: 0px 0px 17px 1px #eb0ef7;
+    }
+}
